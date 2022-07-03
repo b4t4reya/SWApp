@@ -1,0 +1,16 @@
+<div>
+  <h1>{{title}}</h1>
+  <div *ngIf="planets">
+    <div *ngFor="let page of planets">
+      <div class="box" *ngFor="let item of page.results">
+        <div class="card" (click)="goToPlanet(item.url.split('/')[item.url.split('/').length-2])">
+          <p class="card_name">{{item.name}}</p>
+          <ul style="padding: 0; margin-left: 20px">
+            <li>Diameter: {{item.diameter}}</li>
+            <li>Population: {{item.population}}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

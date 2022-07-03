@@ -1,0 +1,17 @@
+<div *ngIf="res">
+  <div>
+    <p class="person_name">{{res.name}}</p>
+    <ul class="person_specs">
+      <li>Year of birth: {{res.birth_year}}</li>
+      <li>Eyes color: {{res.eye_color}}</li>
+      <li>Hair color: {{res.hair_color}}</li>
+      <li>Skin color: {{res.hair_color}}</li>
+      <li>Gender: {{res.gender}}</li>
+      <li>Height: {{res.height}}</li>
+      <li>Mass: {{res.mass}}</li>
+    </ul>
+  </div>
+</div>
+<button class="person_button" (click)="goHome()"> Back to Home Page</button>
+<button class="person_button" (click)="goBacktoPlanet(res.homeworld.split('/')[res.homeworld.split('/').length-2])"> Back to Planet Page</button>
+

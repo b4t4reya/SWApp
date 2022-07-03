@@ -1,0 +1,36 @@
+<div>
+  <div *ngIf="resp">
+    <p class="title_name">{{resp.name}}</p>
+    <ul class="planet_specs">
+      <li>Climate: {{resp.climate}}</li>
+      <li>Diameter: {{resp.diameter}}</li>
+      <li>Gravity: {{resp.gravity}}</li>
+      <li>Population: {{resp.population}}</li>
+      <li>Orbital period: {{resp.orbital_period}}</li>
+      <li>Terrain: {{resp.terrain}}</li>
+    </ul>
+  </div>
+<button class="button_filter" (click)="goHome()">Back to Home Page</button>
+
+  <p class="title_name">Persons</p>
+
+  <button class="button_filter_left" (click)="showArray=showAll(persons)">All</button>
+  <button class="button_filter" (click)="showArray=showMale(persons)">Male</button>
+  <button class="button_filter" (click)="showArray=showFemale(persons)">Female</button>
+  <div *ngIf="showArray.length!=0">
+    <div>
+
+      <div class="box" *ngFor="let person of showArray">
+
+        <div class="card" (click)="goToPerson(person.url.split('/')[person.url.split('/').length-2])">
+          <p class="card_name">{{person.name}}</p>
+          <ul style="padding: 0; margin-left: 20px">
+            <li>Birth year: {{person.birth_year}}</li>
+            <li>Color of eyes: {{person.eye_color}}</li>
+            <li>Gender: {{person.gender}}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

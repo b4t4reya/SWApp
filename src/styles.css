@@ -1,0 +1,6 @@
+body {
+  background-color: black;
+  background-image: url('./assets/backG.jpg');
+  color: yellow;
+  background-blend-mode: hard-light;
+}

@@ -1,0 +1,73 @@
+.button_filter {
+  color: yellow;
+  background-color: black;
+  font-size: 16px;
+  padding: 8px;
+  min-width: 75px;
+  margin: 5px;
+  border-style: solid;
+  border-color: yellow;
+  border-radius: 8px;
+  transition-duration: 500ms;
+  cursor: pointer;
+}
+
+.button_filter_left {
+  color: yellow;
+  background-color: black;
+  font-size: 16px;
+  padding: 8px;
+  min-width: 75px;
+  margin: 10px 5px 10px 12px;
+  border-style: solid;
+  border-color: yellow;
+  border-radius: 8px;
+  transition-duration: 500ms;
+  cursor: pointer;
+}
+
+.button_filter:hover {
+  color: black;
+  background-color: white;
+}
+
+.button_filter_left:hover {
+  color: black;
+  background-color: white;
+}
+
+.card {
+  border: 2px solid yellow;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 10px;
+  width: 240px;
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+  cursor: pointer;
+  transition-duration: 500ms;
+}
+
+.card:hover {
+  color: black;
+  background-color: white;
+}
+
+.card_name {
+  font-size: 24px;
+  text-align: center;
+}
+
+.box{
+  display: inline-block;
+}
+
+.title_name {
+  font-size: 50px;
+  text-align: center;
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+}
+
+.planet_specs {
+  font-size: 24px;
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+}
